@@ -14,6 +14,13 @@ header {
     padding: 1rem 0;
 }
 
+.logo img {
+    max-height: 80px; /* Adjust the logo size */
+    width: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -21,13 +28,21 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #5271ff; /* Matches the theme color */
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .nav-links {
@@ -39,12 +54,6 @@ nav {
     margin-left: 20px;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
 
 .nav-links a:hover {
     color: #ffcc00;
