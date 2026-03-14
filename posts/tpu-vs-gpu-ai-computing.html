@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPU vs GPU: The Battle for AI Computing Dominance - AI News Singapore</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI News Singapore</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h2>TPU vs GPU: The Battle for AI Computing Dominance</h2>
+            <p class="meta">Published: February 28, 2026 | Sources: <a href="https://cloud.google.com/tpu" target="_blank">Google Cloud TPU</a>, <a href="https://www.nvidia.com/en-us/data-center/h100/" target="_blank">NVIDIA</a></p>
+            
+            <p>The AI hardware landscape is shaping up to be a two-horse race: Google's Tensor Processing Units (TPUs) versus NVIDIA's Graphics Processing Units (GPUs). Both are fighting for dominance in the AI computing market, but they take fundamentally different approaches. Let's break down the battle.</p>
+
+            <h3>What is a GPU?</h3>
+            <p>Originally designed for computer graphics, GPUs became the accidental heroes of AI. Their parallel processing architecture—thousands of small cores handling multiple calculations simultaneously—made them perfect for the matrix multiplications at the heart of neural networks.</p>
+
+            <p>NVIDIA's H100, based on the Hopper architecture, delivers up to <strong>30X faster inference</strong> for large language models compared to its predecessor. It supports multiple precisions (FP64, FP32, FP16, INT8, FP8), making it incredibly versatile. The H100 also includes dedicated Transformer Engine for handling trillion-parameter models.</p>
+
+            <h3>What is a TPU?</h3>
+            <p>Google's TPUs are application-specific integrated circuits (ASICs) custom-designed from the ground up for neural networks. Unlike GPUs, TPUs are built specifically for AI workloads—not repurposed from graphics.</p>
+
+            <p> Google's latest Trillium TPU offers improved energy efficiency and peak compute performance per chip. The upcoming <strong>Ironwood TPU</strong> (Q4 2025) promises to be their most powerful yet, designed specifically for the "age of inference."</p>
+
+            <h3>Key Differences</h3>
+            
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Google TPU</th>
+                    <th>NVIDIA GPU (H100)</th>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>ASIC (custom-built for AI)</td>
+                    <td>General-purpose (adapted for AI)</td>
+                </tr>
+                <tr>
+                    <td>Architecture</td>
+                    <td>Matrix Multiply Unit (MXU)</td>
+                    <td>Tensor Cores</td>
+                </tr>
+                <tr>
+                    <td>Best For</td>
+                    <td>Large-scale training, inference at scale</td>
+                    <td>Versatile: training, inference, HPC</td>
+                </tr>
+                <tr>
+                    <td>Framework Support</td>
+                    <td>JAX, PyTorch, TensorFlow</td>
+                    <td>CUDA, PyTorch, JAX, TensorFlow</td>
+                </tr>
+                <tr>
+                    <td>Interconnect</td>
+                    <td>Proprietary interconnect topology</td>
+                    <td>NVLink (900 GB/s)</td>
+                </tr>
+            </table>
+
+            <h3>The Inference War</h3>
+            <p>As AI shifts from training to inference (running trained models), both companies are pivoting. Google claims TPUs are optimized for inference at scale, while NVIDIA's H100 offers up to 30X inference boost over previous generations.</p>
+
+            <p>NVIDIA's H100 NVL variant, with 188GB HBM3 memory, is specifically designed for LLM inference up to 70 billion parameters—perfect for serving chatbots and AI agents.</p>
+
+            <h3>Singapore's Position</h3>
+            <p>For Singapore's AI ecosystem, this competition is good news. Both Google Cloud and NVIDIA offer TPU/GPU access in Singapore regions. Cloud TPU v5e and v5p are available in Southeast Asia, while NVIDIA's H100 is widely accessible through various cloud providers.</p>
+
+            <p>Singapore researchers and startups can leverage either platform depending on their needs—TPUs for large-scale Google-aligned workloads, GPUs for maximum versatility and ecosystem support.</p>
+
+            <h3>The Verdict</h3>
+            <p>There's no clear winner—it depends on the use case:</p>
+            <ul>
+                <li><strong>Choose TPU</strong> if you're training massive models at scale, using JAX or TensorFlow, and prioritize cost-efficiency</li>
+                <li><strong>Choose GPU</strong> if you need versatility, broad framework support, and have diverse AI workloads</li>
+            </ul>
+
+            <p>What both agree on: the future is accelerated computing, and the race is driving innovation faster than ever.</p>
+            
+            <h3>Sources</h3>
+            <ul>
+                <li><a href="https://cloud.google.com/tpu" target="_blank">Google Cloud TPUs</a></li>
+                <li><a href="https://www.nvidia.com/en-us/data-center/h100/" target="_blank">NVIDIA H100</a></li>
+            </ul>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 AI News Singapore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
